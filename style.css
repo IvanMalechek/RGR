@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'times new roman';
+}
+
+button {
+  font-family: 'times new roman';
+  border: 2px ;
+  background-color: #7605f7;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 10px 15px;
+}
+
+.start-button {
+  margin-bottom: 50vh;
+  font-family: 'times new roman';
+  border: 2px;
+  background-color: #7605f7;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 8px 13px;
+}
+
+button:hover {
+  background-color: #4842f5;
+  cursor: pointer;
+}
+
+button:active {
+  border: solid 2px ;
+}
+
+input {
+  font-family: 'times new roman';
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+.input-empty {
+  margin-top: 0;
+}
+
+.name {
+  margin-bottom: 40vh;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2  {
+  font-size: 28px;
+}
+
+li {
+  font-size: 24px;
+  margin-bottom: 5px;
+  user-select: none;
+}
+
+li:hover {
+  border: 2px;
+  background-color: #7605f7;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.number {
+  font-size: 20px;
+}
+
+.start {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #231f1f;
+  background-size: 22%;
+  background-repeat: no-repeat;
+}
+
+
+
+.questions {
+  margin-bottom: 40vh;
+  max-width: 60%;
+}
+
+.result {
+  border: 6px solid #f542da;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 80vh;
+  width: 40%;
+  margin-bottom: 40%;
+  padding: 15px;
+  padding-bottom: 20px;
+}
+
+.result h2 {
+  margin-top: 0;
+}
+
+img {
+  /* width: 40%; */
+  height: 40vh;
+}
+
+.disable {
+  display: none;
+}
+
+.anim-in { /* Анимация повяления вопроса*/
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+@keyframes fadeIn {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+img {
+	animation: animate_reduce 2s infinite;
+}
+
+@keyframes animate_reduce {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(0.9, 0.9);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
